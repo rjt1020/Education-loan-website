@@ -1,0 +1,98 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="homepage.master.cs" Inherits="homepage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        <br />
+         <img src="pictures/loan.gif" style="z-index: 100; left: 0px; width: 952px; position: absolute; top: 0px; height: 144px" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+          <asp:Menu ID="Menu1" runat="server" style="z-index: 101; left: 56px; position: absolute; top: 160px" Orientation="Horizontal" Width="800px" BackColor="#00C0C0"  >
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/aboutus.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Student" Value="Student" NavigateUrl="~/stuhome.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Bank Details" Value="Bank Details" NavigateUrl="~/bankhome.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/contact.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="LogOut" Value="LogOut" NavigateUrl="LogOut.aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        &nbsp;<asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </asp:contentplaceholder>
+        <br />
+        <br />
+        
+        <br />
+        <br />
+        <br />
+          <br />
+        <br />
+        <br />
+       
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>

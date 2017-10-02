@@ -1,0 +1,38 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="bank.master.cs" Inherits="bank" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<asp:Panel ID="Panel1" runat="server" Height="207px" Width="942px" style="position: relative">
+            <img src="pictures/bank.jpg" style="width: 298px; position: relative; height: 169px" />
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large"
+                ForeColor="DarkViolet" Style="left: 189px; position: relative; top: -85px" Text="Banking System"></asp:Label></asp:Panel>
+        <asp:Menu ID="Menu1" runat="server" BackColor="Turquoise" Orientation="Horizontal"
+            Style="left: 1px; position: relative; top: -29px" Width="942px">
+            <Items>
+                <asp:MenuItem Text="ICICI" Value="Home" NavigateUrl="~/icicihomes.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="SBI" Value="About Us" NavigateUrl="~/sbihomes.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="AXIS" Value="Contact Us" NavigateUrl="~/axishomes.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="HDFC" Value="Logout" NavigateUrl="~/hdfchomes.aspx.exclude"></asp:MenuItem>
+                <asp:MenuItem Text="LogOut" Value="LogOut" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                
+            </Items>
+        </asp:Menu>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

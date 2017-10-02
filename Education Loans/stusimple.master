@@ -1,0 +1,33 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="stusimple.master.cs" Inherits="stusimple" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <asp:Label ID="Label1" runat="server" BackColor="White" Font-Italic="True" Font-Names="Monotype Corsiva"
+            Font-Size="X-Large" ForeColor="#C00000" Style="left: 399px; position: relative;
+            top: 59px" Text="Student" Width="79px"></asp:Label><br />
+        <br />
+        <img src="pictures/stu.jpg" style="left: 36px; width: 229px; position: relative;
+            top: -91px; height: 202px" />
+        <img src="pictures/student.jpg" style="left: 402px; width: 212px; position: relative;
+            top: -112px; height: 174px" /><br />
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+create table icicirates
+( 
+course varchar(20),
+rate varchar(20)
+);
+
+
+
+
+create table hdfcrates
+( 
+ course varchar(20),
+ rate varchar(20)
+ );
+
+
+
+
+ 
+ create table sbirates
+ (  
+ course varchar(20),
+ rate varchar(20)
+ );
+
+
+
+
+
+create table axisrates
+ ( 
+ course varchar(20),
+ rate varchar(20)
+ );
+
+ create table state
+(
+]sid int primary key,
+ state varchar(20)
+));
+
+   
+   create table city
+   (
+    cid  int references state(sid),
+    city varchar(20)
+    );
+
+
+
+
+
+
+
+
+
+
+create table personaldets1
+(
+fname varchar(50),
+lname varchar(50),
+lastcollege varchar(50),
+lastcourse varchar(50),
+marks varchar(50),
+id int identity(1,1) primary key,
+uid varchar(50),
+password varchar(50)
+
+
+
+)
+
+
+create table contactdets1
+(
+currentaddress varchar(90),
+state varchar(50),
+city varchar(50),
+mobileno varchar(50),
+EMailId varchar(70),
+id int references personaldets1(id)
+)
+
+create table coursedets1
+(
+collegename varchar(50),
+coursetype varchar(50),
+coursename varchar(50),
+duration int,
+id int references personaldets1(id)
+)
+
+
+create table loandets1
+(
+bankname varchar(50),
+fee varchar(50),
+interest varchar(50),
+amount varchar(50),
+id int references personaldets1(id)
+
+
+create table coborrowerdets1
+(
+coborrowername varchar(50),
+profession varchar(50),
+designation varchar(50),
+salary varchar(50),
+id int references personaldets1(id)
+
+
+create procedure payments
+(@id1 int,@amt float)as
+begin
+
+update loandets1 set amount=amount-@amt where id=@id1
+insert into paydets values(@id1,@amt)
+
+end
+exec payments 6,500
+create table paydets
+(
+id int,
+amt int
+)
+
+
+create view baldets2 as 
+
+select id,x=sum(amt) from paydets group by id
+select * from baldets2
+
+
+
+
+
+
+

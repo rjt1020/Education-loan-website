@@ -1,0 +1,45 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="student.master.cs" Inherits="student" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong><em><span style="font-size: 24pt;
+            color: #660033; font-family: Monotype Corsiva"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></em></strong><asp:Panel ID="Panel1" runat="server" BackColor="White" ForeColor="White" Height="225px"
+            Style="left: 15px; position: relative; top: -81px" Width="949px">
+            <img src="pictures/student.jpg" style="left: 9px; width: 222px; position: relative;
+                top: 4px; height: 164px" />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Monotype Corsiva"
+                Font-Size="XX-Large" ForeColor="Maroon" Style="left: 39px; position: relative;
+                top: -65px" Text="Student" Width="112px"></asp:Label>
+            <asp:Menu ID="Menu1" runat="server" BackColor="#FF80FF" Orientation="Horizontal"
+                Style="position: relative; left: 196px; top: 12px;" Width="504px">
+                <Items>
+                    <asp:MenuItem Text="Apply For Loan" Value="Apply For Loan" NavigateUrl="~/stuapplyloan.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="See Details" Value="Login" NavigateUrl="~/stulogin.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </asp:Panel>
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

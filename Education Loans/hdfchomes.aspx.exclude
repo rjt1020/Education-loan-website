@@ -1,0 +1,126 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="hdfchome.aspx.cs" Inherits="hdfchome" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <img src="pictures/hdfc.jpg" style="left: 10px; width: 351px; position: relative;
+                top: 49px" />
+            <asp:Panel ID="Panel1" runat="server" Font-Bold="True" Font-Size="14pt" Height="321px"
+                Style="left: 37px; position: absolute; top: 216px" Width="417px">
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <br />
+                &nbsp;&nbsp; About Us:<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 11pt">
+                    HDFC Bank was incorporated in August 1994, and, currently has an nationwide network
+                    of
+
+                    <script type="text/javascript">Branches()</script>
+
+                    1412 Branches and
+
+                    <script type="text/javascript">atms()</script>
+
+                    2890 ATM's in 528 Indian towns and cities.</span><br />
+                &nbsp; &nbsp; &nbsp;<br />
+                &nbsp;Financial &nbsp;Information:<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 11pt">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    All the facts and figures highlighting the rapid growth of HDFC Bank over the last
+                    nine years.<br />
+                    &nbsp;
+                    <br />
+                    <br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-size: 14pt">Contact &nbsp;Address<span
+                        style="font-size: 11pt">:<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span
+                            style="color: #cc0000">Plot No 10 &amp; 15<br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Dharmareddy
+                            colony<br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;KPHB
+                            Colony<br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Kukatpally<br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Hyderabad
+                            -500072<br />
+                        </span></span><span style="font-size: 11pt"><b><span style="color: #cc0000">&nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            <br />
+                        </span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Banking Hours</b><br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;Weekdays
+                            :10.00am to 4.00pm<br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; Sat :10.00am to 1.00pm </span></span></span>
+            </asp:Panel>
+            <asp:Panel ID="Panel2" runat="server" Height="311px" Style="left: 506px; position: relative;
+                top: 106px" Width="424px">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;&nbsp; <span class="txt_body">HDFC Bank brings to you <strong>L</strong>oan
+                    <strong>A</strong>gainst <strong>P</strong>roperty <strong>(LAP)</strong>. You can
+                    now take a loan against your residential or commercial property, to expand your
+                    business, plan a dream wedding, fund your child's education and much more.&nbsp;<br />
+                    &nbsp; &nbsp; &nbsp;
+                    <br />
+                    <br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                   
+                    &nbsp;</span>&nbsp;
+                     <table style="left: 52px; position: relative; top: -10px">
+                        <tr>
+                            <td>
+                                <asp:Label ID="Label2" runat="server" Text="Select Loan Category" Style="left: -5px;
+                                    position: relative; top: 3px"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                                    <asp:ListItem>--select--</asp:ListItem>
+                                    <asp:ListItem>Graduate</asp:ListItem>
+                                    <asp:ListItem>PostGraduate</asp:ListItem>
+                                </asp:DropDownList></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:DropDownList ID="DropDownList2" runat="server">
+                                    <asp:ListItem>BSC</asp:ListItem>
+                                    <asp:ListItem>BTECH</asp:ListItem>
+                                    <asp:ListItem>BCOM</asp:ListItem>
+                                </asp:DropDownList></td>
+                            <td>
+                                <asp:DropDownList ID="DropDownList3" runat="server">
+                                    <asp:ListItem>MSC</asp:ListItem>
+                                    <asp:ListItem>MCA</asp:ListItem>
+                                    <asp:ListItem>MBA</asp:ListItem>
+                                </asp:DropDownList></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Button ID="Btnsel" runat="server" Text="Select" OnClick="Btnsel_Click" />
+                                <asp:ImageButton ID="ImageButton1" runat="server" Height="16px" ImageUrl="~/pictures/back.jpg"
+                                    PostBackUrl="~/bankhome.aspx" Style="z-index: 100; left: 96px; position: absolute;
+                                    top: -310px" Width="24px" />
+                            </td>
+                            <td>
+                                <asp:Label ID="Label1" runat="server" Text=""></asp:Label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:LinkButton ID="Lb1" runat="server" PostBackUrl="~/stuapplyloan.aspx">Apply Now</asp:LinkButton></td>
+                        </tr>
+                    </table>
+            </asp:Panel>
+        </div>
+    </form>
+</body>
+</html>

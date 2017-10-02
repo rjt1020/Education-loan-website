@@ -1,0 +1,63 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contactinf.aspx.cs" Inherits="contactinf" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+<script language="javascript" type="text/javascript">
+
+</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Panel ID="Panel1" runat="server" Height="215px" Style="left: 130px; position: relative;
+            top: 244px" Width="698px">
+            <table id="TABLE1" style="left: 37px; width: 561px; position: relative; top: 29px; height: 104px;" onclick="return TABLE1_onclick()">
+                <tr>
+                    <td style="width: 166px; height: 22px">
+                        Present Address of Student</td>
+                    <td style="width: 255px; height: 22px">
+                        <asp:TextBox ID="TextBox1" runat="server" Style="position: relative; left: 19px; top: 0px;" TextMode="MultiLine"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td style="width: 166px; height: 24px;">
+                        State</td>
+                    <td style="width: 255px; height: 24px;">
+                        <asp:DropDownList ID="DropDownList1" runat="server" Style="position: relative; left: 53px; top: 0px;" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                        </asp:DropDownList></td>
+                </tr>
+                <tr>
+                    <td style="width: 166px">
+                        City</td>
+                    <td style="width: 255px">
+                        <asp:DropDownList ID="DropDownList2" runat="server" Style="position: relative; left: 52px; top: 1px;" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                        </asp:DropDownList></td>
+                </tr>
+                <tr>
+                    <td style="width: 166px; height: 14px;">
+                        Mobile/Telephone&nbsp; no</td>
+                    <td style="width: 255px; height: 14px;">
+                        <asp:TextBox ID="TextBox2" runat="server" Style="left: 23px; position: relative; top: 5px"></asp:TextBox>
+                        <asp:TextBox ID="TextBox3" runat="server" Style="left: 27px; position: relative;
+                            top: 26px"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td style="width: 166px; height: 21px;">
+                        Email</td>
+                    <td style="width: 255px; height: 21px;">
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Monotype Corsiva"
+            Font-Size="X-Large" ForeColor="Crimson" Style="left: 392px; position: relative;
+            top: -46px" Text="Contact Information"></asp:Label>
+        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/pictures/continuebn.png"
+            Style="left: 103px; position: relative; top: 275px" Width="109px" />
+    
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Data.SqlClient;
+
+public partial class contactinf : System.Web.UI.Page
+{
+    SqlConnection cn = new SqlConnection("server=RJT-LAPPY;database=eduloan;Integrated Security=SSPI");
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!Page.IsPostBack)
+        {
+            string str1 = "select state from state";
+            //str1 = str1 + "UNION ALL SELECT '--SELECT--' ORDER BY 1";
+            SqlDataAdapter da = new SqlDataAdapter(str1, cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            DropDownList1.DataSource = ds;
+            DropDownList1.DataTextField = "state";
+            DropDownList1.DataBind();
+
+            string str2 = "select city from city";
+            //str2 = str2 + "UNION ALL SELECT '--SELECT--' ORDER BY 1";
+            SqlDataAdapter da1 = new SqlDataAdapter(str2, cn);
+            DataSet ds1 = new DataSet();
+            da1.Fill(ds1);
+            DropDownList2.DataSource = ds1;
+            DropDownList2.DataTextField = "city";
+            DropDownList2.DataBind();
+        }
+        
+    }
+    protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        //string str = "select city from city c,state s where c.cid=s.sid and state='" + DropDownList1.SelectedValue + "'";
+        //SqlDataAdapter da2 = new SqlDataAdapter(str, cn);
+        //DataSet ds2 = new DataSet();
+        //da2.Fill(ds2);
+        //DropDownList1.DataSource = ds2;
+        //DropDownList1.DataTextField = "city";
+        //DropDownList1.DataBind();
+       
+    }
+    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        string str = "select city from city c,state s where c.cid=s.sid and state='" + DropDownList1.SelectedValue+"'";
+          
+        SqlDataAdapter da2 = new SqlDataAdapter(str, cn);
+        DataSet ds2 = new DataSet();
+        da2.Fill(ds2);
+        DropDownList2.DataSource = ds2;
+        DropDownList2.DataTextField = "city";
+        DropDownList2.DataBind();
+    }
+}
